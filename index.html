@@ -3,18 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous">
-    <link 
-        rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Title</title>
 </head>
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <!-- Контакти-->
+        <div class="container-fluid contacts">
+            <div class="row">
+                <h3>Как да се свържете с нас?</h3>
+                <!-- Информация за контакт -->
+                <div class="col-lg-3 col-md-6 col-sm-12" id="contacts-information">
+                    <div class="phone">
+                        <p><i class="bi bi-telephone"></i>Телефон: +359 123 456 789</p>
+                    </div>
+                    <div class="mail">
+                        <p><i class="bi bi-envelope"></i>Мейл: support@bookbuy.bg</p>
+                    </div>
+                    <div class="location">
+                        <p><i class="bi bi-geo-alt"></i>Адрес: София център, бул. „Витоша“ 37, 1000 София</p>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>Facebook</a>
+                    </div>
+                </div>
+                <!-- Карта на адреса -->
+                <div class="col-lg-4 col-md-6 col-sm-12" id="contacts-map">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.5360556849632!2d23.320422999999998!3d42.692369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856d28c04ab7%3A0x52fde3c406bbcbaf!2sGreenwich%20Book%20Center!5e0!3m2!1sbg!2sbg!4v1776431893880!5m2!1sbg!2sbg" width="600" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Контактна форма -->
+                <div class="col-lg-5 col-md-12 col-12" id="contacts-form">
+                    <form id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="firstName" class="form-label">Име</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Иван">
+                                <span class="text-danger" id="firstName-err"></span>
+                            </div>
+                            <div class="col-6">
+                                <label for="lastName" class="form-label">Фамилия</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Иванов">
+                                <span class="text-danger" id="lastName-err"></span>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+359 123 456 789">
+                            <span class="text-danger" id="phone-err"></span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="email" class="form-label">Имейл</label>
+                            <input type="email" class="form-control" id="email" placeholder="vankataivan@gmail.com">
+                            <span class="text-danger" id="email-err"></span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="question" class="form-label">Въпрос</label>
+                            <textarea class="form-control" id="question" rows="5" placeholder="Напиши своя въпрос тук..."></textarea>
+                            <span class="text-danger" id="question-err"></span>
+                        </div>
+                        <button type="submit">Изпрати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
