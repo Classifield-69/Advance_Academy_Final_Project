@@ -10,7 +10,7 @@
     <link   rel="stylesheet" 
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">    
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Title</title>
+    <title>BookRandom</title>
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-md">
             <!-- Лого -->
             <a class="navbar-brand" href="index.html">
-                BookStore
+                BookRandom
             </a>
             <!-- HAMBURGER Бутон -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
@@ -31,10 +31,10 @@
                         <a class="nav-link" href="#">Начало</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">За нас</a>
+                        <a class="nav-link" href="#about-us-section">За нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Книги</a>
+                        <a class="nav-link" href="#product">Книги</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacts">Контакти</a>
@@ -44,19 +44,62 @@
         </nav>
     </header>
     <main>
-        <section>
+        <!-- Hero секция -->
+        <section id="hero-section">
             <!-- Стил на backgroud за цялата секция intro -->
             <div class="containter-fluid" id="intro-background-stye">
                 <!-- Контейнер в контейнер за да се стилизира по-добре -->
                 <div class="container" id="intro">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12" id="intro-information">
-                            <!-- Добави текст информация за проекта -->
+                            <h1>Добре дошли в <span id="intro-title">BookRandom</span></h1>
+                            <p>
+                                Не знаеш какво да четеш? Остави случайността да избере вместо теб!
+                                Може би ще намериш новата ти любима книга!
+                            </p>
+                            <button id="btn-try" onclick="goToRandomBooks()">
+                                ПРОБВАЙ СИ КЪСМЕТА
+                            </button>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12" id="intro-image">
                             <img src="./IMG/intro-library.jpg" alt="Books in Library">
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция "За нас" -->
+        <section id="about-us-section">
+            <div class="container about-us">
+                <div class="row">
+                    <div class="col" id="about-us">
+                        <h3>За нас</h3>
+                        <p>
+                            <span id="about-us-title">BookRandom</span> се роди от една проста идея — понякога най-добрите 
+                            книги са тези, които никога не бихме избрали сами. 
+                        </p>
+
+                        <p>
+                            Вярваме че всяка книга крие своя читател. Нашата мисия е да 
+                            свържем хората с истории, които иначе никога не биха открили 
+                            — чрез силата на случайността.
+                        </p>
+                        <p>
+                            Спри да губиш време в безкрайно търсене и избиране. 
+                            Натисни един бутон и нека ние изберем следващото ти 
+                            приключение между кориците.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция "Продукт" -->
+        <section id="product">
+            <div class="container" id="products">
+                <h3>Случайни книги за теб</h3>
+                <button id="btn-loadBooks" onclick="loadBooks()">Зареди книги</button>
+                <div class="row" id="bookRow">
+                    
                 </div>
             </div>
         </section>
@@ -72,7 +115,7 @@
                         <p><i class="bi bi-telephone"></i>Телефон: +359 123 456 789</p>
                     </div>
                     <div class="mail">
-                        <p><i class="bi bi-envelope"></i>Мейл: support@bookbuy.bg</p>
+                        <p><i class="bi bi-envelope"></i>Мейл: support@bookrandom.bg</p>
                     </div>
                     <div class="location">
                         <p><i class="bi bi-geo-alt"></i>Адрес: София център, бул. „Витоша“ 37, 1000 София</p>
