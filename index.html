@@ -47,7 +47,7 @@
         <!-- Hero секция -->
         <section id="hero-section">
             <!-- Стил на backgroud за цялата секция intro -->
-            <div class="containter-fluid" id="intro-background-stye">
+            <div class="container-fluid" id="intro-background-stye">
                 <!-- Контейнер в контейнер за да се стилизира по-добре -->
                 <div class="container" id="intro">
                     <div class="row">
@@ -97,6 +97,29 @@
         <section id="product">
             <div class="container" id="products">
                 <h3>Случайни книги за теб</h3>
+                <p>Избери жанр или остави без избор за пълно случайни книги:</p>
+                <div id="filters-products">
+                    <input type="checkbox" id="fiction" value="fiction">
+                    <label for="fiction">Фикшън</label>
+            
+                    <input type="checkbox" id="fantasy" value="fantasy">
+                    <label for="fantasy">Фентъзи</label>
+                
+                    <input type="checkbox" id="mystery" value="mystery">
+                    <label for="mystery">Мистерия</label>
+                
+                    <input type="checkbox" id="romance" value="romance">
+                    <label for="romance">Романтика</label>
+                
+                    <input type="checkbox" id="horror" value="horror">
+                    <label for="horror">Ужаси</label>
+                
+                    <input type="checkbox" id="thriller" value="thriller">
+                    <label for="thriller">Трилър</label>
+                
+                    <input type="checkbox" id="adventure" value="adventure">
+                    <label for="adventure">Приключения</label>
+                </div>
                 <button id="btn-loadBooks" onclick="loadBooks()">Зареди книги</button>
                 <div class="row" id="bookRow">
                     
@@ -166,6 +189,8 @@
             </div>
         </div>
     </footer>
+    <script src="./JS/validateForm.js"></script>
+    <script src="./JS/loadBooks.js"></script>
     <script src="./JS/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
