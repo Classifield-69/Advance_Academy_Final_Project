@@ -14,33 +14,20 @@
 </head>
 <body>
     <header>
-        <!-- Bootstrap основна готова навигация -->
-        <nav class="navbar navbar-expand-md">
+        <nav id="main-nav">
             <!-- Лого -->
-            <a class="navbar-brand" href="index.html">
-                BookRandom
-            </a>
-            <!-- HAMBURGER Бутон -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span id="nav-logo">BookRandom</span>
             <!-- Линкове -->
-            <div class="collapse navbar-collapse" id="mainMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Начало</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-us-section">За нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#product">Книги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Контакти</a>
-                    </li>
-                </ul>
-            </div>
+            <ul id="nav-links">
+                <li><a href="#hero-section">Начало</a></li>
+                <li><a href="#about-us-section">За нас</a></li>
+                <li><a href="#product">Книги</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+            <!-- Burger бутон за телефони -->
+            <button id="hamburger" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </button>
         </nav>
     </header>
     <main>
@@ -121,7 +108,7 @@
                     <label for="adventure">Приключения</label>
                 </div>
                 <button id="btn-loadBooks" onclick="loadBooks()">Зареди книги</button>
-                <div class="row" id="bookRow">
+                <div class="row" id="book-row">
                     
                 </div>
             </div>
@@ -186,6 +173,9 @@
                         <button type="submit">Изпрати</button>
                     </form>
                 </div>
+            </div>
+            <div class="row">
+                <p id="footer-rights">© 2025 BookRandom. Всички права запазени.</p>
             </div>
         </div>
     </footer>

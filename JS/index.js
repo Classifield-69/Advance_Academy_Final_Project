@@ -1,3 +1,8 @@
+// Burger навигация
+function toggleMenu() {
+  document.getElementById('nav-links').classList.toggle('open');
+}
+
 // Зареждане на книги при зареждане на сайта
 document.addEventListener('DOMContentLoaded', function() {
   loadBooks();
