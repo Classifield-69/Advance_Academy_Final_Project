@@ -28,7 +28,7 @@ body {
 
 #nav-logo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
+    font-size: 26px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
@@ -47,7 +47,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 15px;
     letter-spacing: 0.5px;
     transition: opacity 0.2s;
 }
@@ -62,7 +62,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 29px;
     color: #fff;
 }
 
@@ -93,9 +93,9 @@ body {
 
 #intro-information h1 {
     font-family: 'Lato', sans-serif;
-    font-size: 2.2rem;
+    font-size: 35px;
     color: #4a2e0e;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 #intro-title {
@@ -105,8 +105,8 @@ body {
 
 #intro-information p {
     color: #5a3a1a;
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
+    font-size: 17px;
+    margin-bottom: 24px;
     max-width: 480px;
 }
 
@@ -115,7 +115,7 @@ body {
     color: #fff;
     border: none;
     padding: 12px 30px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     border-radius: 6px;
     cursor: pointer;
@@ -148,16 +148,16 @@ body {
 
 #about-us h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 32px;
     color: #4a2e0e;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 #about-us p {
     color: #555;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.8;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 #about-us-title {
@@ -174,17 +174,17 @@ body {
 
 #products h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 32px;
     color: #4a2e0e;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 #products>.container>p,
 #products p {
     text-align: center;
     color: #5a3a1a;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 #filters-products {
@@ -192,7 +192,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 #filters-products input[type="checkbox"] {
@@ -203,7 +203,7 @@ body {
 }
 
 #filters-products label {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
     color: #4a2e0e;
     cursor: pointer;
@@ -211,12 +211,12 @@ body {
 
 #btn-loadBooks {
     display: block;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 32px auto;
     background-color: #be986d;
     color: #fff;
     border: none;
     padding: 12px 35px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     border-radius: 6px;
     cursor: pointer;
@@ -230,12 +230,12 @@ body {
 
 #loading-text {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 21px;
     font-weight: 700;
     text-transform: uppercase;
     color: #4a2e0e;
     letter-spacing: 2px;
-    padding: 2rem 0;
+    padding: 32px 0;
     width: 100%;
 }
 
@@ -249,13 +249,6 @@ body {
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
-}
-
-.col-5-custom img {
-    width: 100%;
-    border-radius: 4px;
-    display: block;
-    margin-bottom: 8px;
 }
 
 .book-card {
@@ -275,7 +268,7 @@ body {
 }
 
 .book-card p {
-    font-size: 0.85rem;
+    font-size: 14px;
     color: #4a2e0e;
     margin-bottom: 5px;
     text-align: center;
@@ -290,8 +283,8 @@ body {
 
 #contacts h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 29px;
+    margin-bottom: 24px;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -300,8 +293,8 @@ body {
 #contacts-information p,
 #contacts-information a {
     color: #fff;
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-size: 15px;
     text-decoration: none;
     display: block;
 }
@@ -341,11 +334,11 @@ body {
     color: #fff;
     border: none;
     padding: 10px 30px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 16px;
     transition: background-color 0.2s;
     width: 100%;
 }
@@ -355,11 +348,11 @@ body {
 }
 
 #footer-rights {
-  text-align: center;
-  color: rgba(255,255,255,0.7);
-  font-size: 0.85rem;
-  margin-top: 2rem;
-  width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-top: 32px;
+    width: 100%;
 }
 
 /* Media */
@@ -394,7 +387,7 @@ body {
     }
 
     #intro-information h1 {
-        font-size: 1.6rem;
+        font-size: 26px;
     }
 
     #filters-products {
