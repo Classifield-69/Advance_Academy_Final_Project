@@ -15,39 +15,40 @@
 <body>
     <header>
         <nav id="main-nav">
-            <!-- Лого -->
+            <!-- Logo -->
             <span id="nav-logo">BookRandom</span>
-            <!-- Линкове -->
+            <!-- Links -->
             <ul id="nav-links">
                 <li><a href="#hero-section">Начало</a></li>
                 <li><a href="#about-us-section">За нас</a></li>
                 <li><a href="#product">Книги</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
-            <!-- Burger бутон за телефони -->
+            <!-- Burger button for nav -->
             <button id="hamburger" onclick="toggleMenu()">
                 <i class="bi bi-list"></i>
             </button>
         </nav>
     </header>
     <main>
-        <!-- Hero секция -->
+        <!-- Hero section -->
         <section id="hero-section">
-            <!-- Стил на backgroud за цялата секция intro -->
             <div class="container-fluid" id="intro-background-stye">
-                <!-- Контейнер в контейнер за да се стилизира по-добре -->
                 <div class="container" id="intro">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12" id="intro-information">
                             <h1>Добре дошли в <span id="intro-title">BookRandom</span></h1>
+
                             <p>
                                 Не знаеш какво да четеш? Остави случайността да избере вместо теб!
                                 Може би ще намериш новата ти любима книга!
                             </p>
+
                             <button id="btn-try" onclick="goToRandomBooks()">
                                 ПРОБВАЙ СИ КЪСМЕТА
                             </button>
                         </div>
+                        
                         <div class="col-lg-6 col-md-6 col-sm-12" id="intro-image">
                             <img src="./IMG/intro-library.jpg" alt="Books in Library">
                         </div>
@@ -55,7 +56,7 @@
                 </div>
             </div>
         </section>
-        <!-- Секция "За нас" -->
+        <!-- Section "About Us" -->
         <section id="about-us-section">
             <div class="container about-us">
                 <div class="row">
@@ -80,11 +81,12 @@
                 </div>
             </div>
         </section>
-        <!-- Секция "Продукт" -->
+        <!-- Section "Product" -->
         <section id="product">
             <div class="container" id="products">
                 <h3>Случайни книги за теб</h3>
                 <p>Избери жанр или остави без избор за пълно случайни книги:</p>
+
                 <div id="filters-products">
                     <input type="checkbox" id="fiction" value="fiction">
                     <label for="fiction">Фикшън</label>
@@ -115,11 +117,11 @@
         </section>
     </main>
     <footer>
-        <!-- Контакти-->
+        <!-- Contacts -->
         <div class="container-fluid" id="contacts">
             <div class="row">
                 <h3>Как да се свържете с нас?</h3>
-                <!-- Информация за контакт -->
+
                 <div class="col-lg-3 col-md-6 col-sm-12" id="contacts-information">
                     <div class="phone">
                         <p><i class="bi bi-telephone"></i>Телефон: +359 123 456 789</p>
@@ -134,13 +136,13 @@
                         <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>Facebook</a>
                     </div>
                 </div>
-                <!-- Карта на адреса -->
+
                 <div class="col-lg-4 col-md-6 col-sm-12" id="contacts-map">
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.5360556849632!2d23.320422999999998!3d42.692369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856d28c04ab7%3A0x52fde3c406bbcbaf!2sGreenwich%20Book%20Center!5e0!3m2!1sbg!2sbg!4v1776431893880!5m2!1sbg!2sbg" width="600" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <!-- Контактна форма -->
+
                 <div class="col-lg-5 col-md-12 col-12" id="contacts-form">
                     <form id="contactForm" novalidate>
                         <div class="row">
@@ -174,6 +176,7 @@
                     </form>
                 </div>
             </div>
+
             <div class="row">
                 <p id="footer-rights">© 2025 BookRandom. Всички права запазени.</p>
             </div>
